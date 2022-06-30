@@ -28,15 +28,15 @@ const app = Vue.createApp({
         },
         updateStatus(){
 
-            if(this.isOnSale){
-                this.isOnSale = false;
+            if(this.inStock){
+                this.inStock = false;
                 console.log("false")
             }else {
-                this.isOnSale = true;
+                this.inStock = true;
                 console.log("true")
             }
 
-            return this.isOnSale
+            return this.inStock;
         }
     }
 })
